@@ -566,7 +566,7 @@ package $0$;
 
 import java.util.ArrayList;
 
-final class State
+public final class State
 {
     int state;
     ArrayList<Object> nodes;
@@ -576,6 +576,14 @@ final class State
         this.state = state;
         this.nodes = nodes;
     }
+
+    public int getState() {
+        return state;
+    }
+
+    public ArrayList<Object> getNodes() {
+        return nodes;
+    } 
 }
 
 $
